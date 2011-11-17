@@ -46,19 +46,18 @@ int main (int argc, char **argv)
   char *filename;
 
   int rank, size, next, prev, tag;
-  int start, stop;//, i;
-  int left, right, up, down; //addon, passon, sum;
+//  int start, stop;//, i;
+//  int left, right, up, down; //addon, passon, sum;
   int nbrleft, nbrright, nbrtop, nbrbottom;
+  int sx, ex, sy, ey;
 
   MPI_Status status;
   MPI_Request request;
   MPI_Comm comm;
 
   // Topology variables
-  int comm2d, direction, disp;
-  int dims[ndims];
-  int period[ndims];
-  int reorder;
+  int comm2d, direction, disp, reorder;
+  int dims[ndims], period[ndims];
 
   comm = MPI_COMM_WORLD;
   tag = 1;
@@ -117,12 +116,13 @@ int main (int argc, char **argv)
     }
   
 
-  MPI_Cart_shift(comm2d, 0, disp, &left, &right);
-  MPI_Cart_shift(comm2d, 1, disp, &up, &down);
+  //MPI_Cart_shift(comm2d, 0, disp, &left, &right);
+  //MPI_Cart_shift(comm2d, 1, disp, &up, &down);
   //printf("From rank: %d\n", rank);
-  findnbrs(comm2d, &nbrleft, &nbrright, &nbrtop, &nbrbottom);
-  printf("rank = %d, nbrleft = %d, nbrright = %d, nbrtop = %d, nbrbottom = %d\n", rank, nbrleft, nbrright, nbrtop, nbrbottom);
-
+  fndnbrs(comm2d, &nbrleft, &nbrright, &nbrtop, &nbrbottom);
+  //printf("rank = %d, nbrleft = %d, nbrright = %d, nbrtop = %d, nbrbottom = %d\n", rank, nbrleft, nbrright, nbrtop, nbrbottom);
+  fnd2ddecomp(comm2d, N, &sx, &ex, &sy, &ey);
+  printf("rank = %d, sx = %d, ex = %d, sy = %d, ey = %d\n", rank, sx, ex, sy, ey);
 
   //MPI_Scatter(masterbuf, MP*NP, MPI_FLOAT, buf, MP*NP, MPI_FLOAT,
   //            0, MPI_COMM_WORLD);
