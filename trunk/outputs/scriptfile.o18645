@@ -1,0 +1,24 @@
+--------------------------------------------------
+START BATCH JOB on host ness1.epcc.ed.ac.uk at 16/11/11 09:55:18
+--------------------------------------------------
+
+Username:    s1160904
+Job id:      18645
+Jobfile:     scriptfile
+Jobname:     scriptfile
+Run queue:   16proc_30mins
+Job slots:   4
+Environment: mpi
+Project id:  sge
+--------------------------------------------------
+
+
+unable to post a write for the suspend command: rank 2
+unable to handle the command: "cmd=abort_job src=1 dest=0 tag=3 name=478AF2DC2EB8C58D62795B413CA0825 rank=2 error="Fatal error in MPI_Comm_rank: Invalid communicator, error stack:
+MPI_Comm_rank(107): MPI_Comm_rank(comm=0x0, rank=0x7fff547b3a5c) failed
+MPI_Comm_rank(65).: Invalid communicator" exit_code=1 "
+
+
+------------------------------------------------
+END BATCH JOB on host ness1.epcc.ed.ac.uk at 16/11/11 10:05:19
+------------------------------------------------

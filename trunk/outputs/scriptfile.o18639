@@ -1,0 +1,92 @@
+--------------------------------------------------
+START BATCH JOB on host ness2.epcc.ed.ac.uk at 16/11/11 09:48:38
+--------------------------------------------------
+
+Username:    s1160904
+Job id:      18639
+Jobfile:     scriptfile
+Jobname:     scriptfile
+Run queue:   16proc_30mins
+Job slots:   4
+Environment: mpi
+Project id:  sge
+--------------------------------------------------
+
+
+/opt/sge6.1/bin/lx24-amd64/qrsh -inherit -V ness2 env PMI_RANK=0 PMI_SIZE=4 PMI_KVS=7F6B7C762DB655CE6FA6C4DD432D5194 PMI_ROOT_HOST=ness2.epcc.ed.ac.uk PMI_ROOT_PORT=45177 PMI_ROOT_LOCAL=0 PMI_APPNUM=0 imagempi
+/opt/sge6.1/bin/lx24-amd64/qrsh -inherit -V ness2 env PMI_RANK=2 PMI_SIZE=4 PMI_KVS=7F6B7C762DB655CE6FA6C4DD432D5194 PMI_ROOT_HOST=ness2.epcc.ed.ac.uk PMI_ROOT_PORT=45177 PMI_ROOT_LOCAL=0 PMI_APPNUM=0 imagempi
+/opt/sge6.1/bin/lx24-amd64/qrsh -inherit -V ness2 env PMI_RANK=1 PMI_SIZE=4 PMI_KVS=7F6B7C762DB655CE6FA6C4DD432D5194 PMI_ROOT_HOST=ness2.epcc.ed.ac.uk PMI_ROOT_PORT=45177 PMI_ROOT_LOCAL=0 PMI_APPNUM=0 imagempi
+/opt/sge6.1/bin/lx24-amd64/qrsh -inherit -V ness2 env PMI_RANK=3 PMI_SIZE=4 PMI_KVS=7F6B7C762DB655CE6FA6C4DD432D5194 PMI_ROOT_HOST=ness2.epcc.ed.ac.uk PMI_ROOT_PORT=45177 PMI_ROOT_LOCAL=0 PMI_APPNUM=0 imagempi
+Processing 192 x 360 image on 4 processes
+Number of iterations = 1500
+
+Reading <edge192x360.pgm>
+
+Working ok!Iteration 200
+Iteration 400
+Iteration 600
+Iteration 800
+Iteration 1000
+Iteration 1200
+Iteration 1400
+
+Finished 1500 iterations
+
+Writing <image192x360.pgm>
+Writing 192 x 360 picture into file: image192x360.pgm
+Processing 192 x 360 image on 4 processes
+Number of iterations = 1500
+
+Reading <edge192x360.pgm>
+
+Working ok!Iteration 200
+Iteration 400
+Iteration 600
+Iteration 800
+Iteration 1000
+Iteration 1200
+Iteration 1400
+
+Finished 1500 iterations
+
+Writing <image192x360.pgm>
+Writing 192 x 360 picture into file: image192x360.pgm
+Processing 192 x 360 image on 4 processes
+Number of iterations = 1500
+
+Reading <edge192x360.pgm>
+
+Working ok!Iteration 200
+Iteration 400
+Iteration 600
+Iteration 800
+Iteration 1000
+Iteration 1200
+Iteration 1400
+
+Finished 1500 iterations
+
+Writing <image192x360.pgm>
+Writing 192 x 360 picture into file: image192x360.pgm
+Processing 192 x 360 image on 4 processes
+Number of iterations = 1500
+
+Reading <edge192x360.pgm>
+
+Working ok!Iteration 200
+Iteration 400
+Iteration 600
+Iteration 800
+Iteration 1000
+Iteration 1200
+Iteration 1400
+
+Finished 1500 iterations
+
+Writing <image192x360.pgm>
+Writing 192 x 360 picture into file: image192x360.pgm
+
+
+------------------------------------------------
+END BATCH JOB on host ness2.epcc.ed.ac.uk at 16/11/11 09:48:40
+------------------------------------------------
