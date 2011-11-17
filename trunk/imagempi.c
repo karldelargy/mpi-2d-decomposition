@@ -119,10 +119,11 @@ int main (int argc, char **argv)
   //MPI_Cart_shift(comm2d, 0, disp, &left, &right);
   //MPI_Cart_shift(comm2d, 1, disp, &up, &down);
   //printf("From rank: %d\n", rank);
+  // Compute the neighbours for each processor
   fndnbrs(comm2d, &nbrleft, &nbrright, &nbrtop, &nbrbottom);
   //printf("rank = %d, nbrleft = %d, nbrright = %d, nbrtop = %d, nbrbottom = %d\n", rank, nbrleft, nbrright, nbrtop, nbrbottom);
   fnd2ddecomp(comm2d, N, &sx, &ex, &sy, &ey);
-  printf("rank = %d, sx = %d, ex = %d, sy = %d, ey = %d\n", rank, sx, ex, sy, ey);
+  //printf("rank = %d, sx = %d, ex = %d, sy = %d, ey = %d\n", rank, sx, ex, sy, ey);
 
   //MPI_Scatter(masterbuf, MP*NP, MPI_FLOAT, buf, MP*NP, MPI_FLOAT,
   //            0, MPI_COMM_WORLD);
